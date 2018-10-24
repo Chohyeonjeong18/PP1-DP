@@ -60,9 +60,13 @@ public class CLAMITest {
 		// TASK3: Conduct defect prediction by using CLAMI models
 		// complete this test case for the generated arff files from Task 2
 		
-		//String[] args = {"-f","data/[your_generated_metric_data].arff","-l","label","-p", "buggy", "-m"};
+		/*String[] args = {"-f","data/techjobs-mvc.arff","-l","label","-p", "buggy", "-m"};
 		
-		//CLAMI.main(args);
+		CLAMI.main(args);
+		
+       String[] args1 = {"-f","data/techjobs-oo.arff","-l","label","-p", "buggy", "-m"};
+		
+		CLAMI.main(args1);*/
 	}
 	
 	@Test
@@ -70,7 +74,7 @@ public class CLAMITest {
 		
 		// TASK5 TODO Use this method to find the best cutoff
 		
-		String bestCutoff = "50";
+		String bestCutoff = "80";
 		
 		String[] args = {"-f","data/Apache.arff","-l","isDefective","-p", "TRUE", "-m", "-c", bestCutoff};
 
